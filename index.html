@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电力电子硬件设计工具集</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f4f7fb;color:#1e2b3c;font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;line-height:1.6}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 20px}
+  h1{font-size:28px;margin:0 0 8px}
+  .sub{color:#64748b;font-size:14px;margin-bottom:32px}
+  .card{display:block;background:#fff;border:1px solid #d8e1ec;border-radius:14px;padding:22px 24px;margin-bottom:16px;
+    text-decoration:none;color:inherit;box-shadow:0 2px 6px rgba(15,23,42,.05);transition:.15s}
+  .card:hover{border-color:#2563eb;transform:translateY(-2px);box-shadow:0 6px 18px rgba(37,99,235,.12)}
+  .card h2{font-size:18px;margin:0 0 6px;color:#2563eb}
+  .card p{margin:0;color:#64748b;font-size:13px}
+  .tags{margin-top:10px}
+  .tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:10px;background:#edf2f8;color:#475569;margin-right:6px}
+  .foot{color:#94a3b8;font-size:12px;margin-top:32px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>电力电子硬件设计工具集</h1>
+  <div class="sub">PCS / 逆变器硬件工程计算 · 参数可改、实时联动、计算-校核-优化闭环 · 纯前端零依赖</div>
+
+  <a class="card" href="./magnetics-designer/">
+    <h2>磁性元件综合设计平台 →</h2>
+    <p>磁芯选型 → 安匝分配 → 绕组 Dowell 交流电阻 → 铜损/铁损 → 温升 → Bdesign 扫描多方案优选。含利兹线/实心线对比。</p>
+    <div class="tags"><span class="tag">Dowell 公式</span><span class="tag">Steinmetz 铁损</span><span class="tag">热态迭代</span><span class="tag">多方案优化</span></div>
+  </a>
+
+  <a class="card" href="./device-loss-calculator/">
+    <h2>器件损耗与结温评估 →</h2>
+    <p>SiC MOSFET / IGBT 可切换：导通+开关+反向恢复损耗 → 热阻网络 → 结温闭环迭代 → 并联降额 → Coffin-Manson 寿命估算，含两器件同工况对比。</p>
+    <div class="tags"><span class="tag">SiC / IGBT</span><span class="tag">Eon/Eoff 缩放</span><span class="tag">结温自洽</span><span class="tag">寿命估算</span></div>
+  </a>
+
+  <div class="foot">纯静态网页 · 所有计算在浏览器本地完成 · 结果可与 Python 内核交叉验证</div>
+</div>
+</body>
+</html>
